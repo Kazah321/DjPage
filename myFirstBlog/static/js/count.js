@@ -1,26 +1,24 @@
 function countBetween(){
-	console.log("Hello count!");
+
 	var valueOne = document.getElementById("numberOne").value;
 	var valueTwo = document.getElementById("numberTwo").value;
-	
-	var lowerNumber = valueOne;
-	var greaterNumber = valueTwo;
+	if (!isNaN(valueOne) && !isNaN(valueTwo)){
+		var lowerNumber = valueOne;
+		var greaterNumber = valueTwo;
 
-	if(valueOne > valueTwo){
-	lowerNumber = valueTwo;
-	greaterNumber = valueOne;
+		if(valueOne > valueTwo){
+		lowerNumber = valueTwo;
+		greaterNumber = valueOne;
+		}
+		
+		var ourResponse =""
+		for(var i= lowerNumber; i<=greaterNumber;i++){
+			ourResponse += i + " ";
+		}
+		
+		document.getElementById("numbers").innerHTML = ourResponse;
 	}
-	console.log("lower:");
-	console.log(lowerNumber);
-	console.log("greater");
-	console.log(greaterNumber);
-	var ourResponse =""
-	for(var i= lowerNumber; i<=greaterNumber;i++){
-		ourResponse += i + " ";
+	else{
+	document.getElementById("numbers").innerHTML = "Co najmniej jedna z wartość to nie liczba :)";	
 	}
-	console.log("Response:");
-	console.log(ourResponse);
-//	document.write(ourResponse)
-	document.getElementById("numbers").innerHTML = ourResponse;
-
 }
