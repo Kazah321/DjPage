@@ -14,3 +14,6 @@ def HomeRenderView(request):
 def simpleJs(request):
 	return render(request, 'myFirstBlog/simpleJs.html', {})	
 
+def simpleJs2(request):
+	return render(request, 'myFirstBlog/simpleJs2.html', {})	
+

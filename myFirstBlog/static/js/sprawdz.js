@@ -1,4 +1,5 @@
 function check(){
+	
 	var number =document.getElementById("pole").value;
 	//document.write(number);
 	if (number>0) document.getElementById("myNumber").innerHTML="Liczba jest dodatnia";
