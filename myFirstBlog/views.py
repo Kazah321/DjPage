@@ -7,3 +7,6 @@ def index(request):
 
 def myPage(request):
 	return render(request, 'myFirstBlog/myPage.html', {})	
+
+def HomeRenderView(request):
+	return render(request,'myFirstBlog/home.html',{})
