@@ -5,4 +5,5 @@ from . import views
 urlpatterns =[
 	path('index',views.index,name="index"),
 	path('myPage',views.myPage,name="myPage"),
+	path('simpleJs',views.simpleJs,name="simpleJs"),
 ]

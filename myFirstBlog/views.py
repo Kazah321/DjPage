@@ -10,3 +10,7 @@ def myPage(request):
 
 def HomeRenderView(request):
 	return render(request,'myFirstBlog/home.html',{})
+
+def simpleJs(request):
+	return render(request, 'myFirstBlog/simpleJs.html', {})	
+

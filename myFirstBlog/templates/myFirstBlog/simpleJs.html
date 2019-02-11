@@ -1,0 +1,19 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<title>Simple using of java script</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="{% static 'js/sprawdz.js'%}"></script>
+</head>
+<body>
+
+	<div>
+		<form>
+			<input type="text" name="number" id="pole">
+			<input type="submit" value="Check!" onclick="check()">
+		</form>	
+	</div>
+	<div id="myNumber"></div>
+</body>
+</html>
