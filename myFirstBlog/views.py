@@ -17,3 +17,6 @@ def simpleJs(request):
 def simpleJs2(request):
 	return render(request, 'myFirstBlog/simpleJs2.html', {})	
 
+def gameCanvcasJs(request):
+	return render(request, 'myFirstBlog/Canvas.html', {})	
+

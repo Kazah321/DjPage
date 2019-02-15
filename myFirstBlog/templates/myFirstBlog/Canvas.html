@@ -1,0 +1,29 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Game in Canvas</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script type="text/javascript" src = "{% static 'js/Canvas.js'%}"></script>
+
+</head>
+<body>
+
+<div class="row">
+	<div class="col-4"></div>
+	<div class="col-4">
+		<canvas id="myCanvas" width="400" height="450"
+		style="border:1px solid #c3c3c3;">
+		Your browser does not support the canvas element.
+		</canvas>
+	</div>
+	<div class="col-4"></div>
+</div>
+<script type="text/javascript"> 
+	create_board();
+	tekst();
+</script>
+
+</body>
+</html>
+
