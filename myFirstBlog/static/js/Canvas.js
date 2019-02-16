@@ -8,9 +8,9 @@ var mouse = {
 function events(canvas){
 	canvas.addEventListener('mousedown',
 		function(event) {
-			
-			mouse.x=event.offsetX-canvas.offsetLeft;
-			mouse.y=event.offsetY-canvas.offsetTop;
+
+			mouse.x=event.offsetX;
+			mouse.y=event.offsetY;
 
 			boardgame.update("yellow",mouse);
 			//console.log("Clik!");
