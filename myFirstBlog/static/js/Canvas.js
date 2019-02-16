@@ -8,7 +8,7 @@ var mouse = {
 function events(canvas){
 	canvas.addEventListener('mousedown',
 		function(event) {
-			console.log(canvas.offsetLeft);
+			
 			mouse.x=event.offsetX-canvas.offsetLeft;
 			mouse.y=event.offsetY-canvas.offsetTop;
 
